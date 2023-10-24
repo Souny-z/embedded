@@ -1,2 +1,2 @@
 # embedded
-This is embedded note
+**This is embedded note**
