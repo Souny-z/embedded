@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 void yanghui()
 {
   // 杨辉三角
@@ -47,9 +47,21 @@ int main(void)
 {
   // yanghui();
   // max();
-  int arr[] = {1,2,3};
-  int n;
-  n = sizeof(arr) / sizeof(int);
-  printf("%d/%d=%d \n",sizeof(arr),sizeof(int),n);
-  printf("%d",sizeof(char));
+  // int arr[] = {1,2,3};
+  // int n;
+  // n = sizeof(arr) / sizeof(int);
+  // printf("%d/%d=%d \n",sizeof(arr),sizeof(int),n);
+  // printf("%d",sizeof(char));
+  // int value;
+  // printf("请输入数字\n");
+  // scanf("%d", &value);
+  // printf("%d\n",value);
+  
+  // 字符长度获取
+  char arr[10] = "hello";
+  // size_t len;
+  // gets(arr);
+  // len = strlen(arr);
+  printf("Lenth: %ld\n",strlen(arr));
 }
+
