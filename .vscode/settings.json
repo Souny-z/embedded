@@ -1,4 +1,7 @@
 {
   "cmake.configureOnOpen": true,
-  "window.autoDetectColorScheme": false
+  "window.autoDetectColorScheme": false,
+  "files.associations": {
+    "stdio.h": "c"
+  }
 }

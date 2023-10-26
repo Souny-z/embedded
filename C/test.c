@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "hello.h"
 
 void yanghui()
 {
@@ -47,5 +46,10 @@ void max()
 int main(void)
 {
   // yanghui();
-  max();
+  // max();
+  int arr[] = {1,2,3};
+  int n;
+  n = sizeof(arr) / sizeof(int);
+  printf("%d/%d=%d \n",sizeof(arr),sizeof(int),n);
+  printf("%d",sizeof(char));
 }
