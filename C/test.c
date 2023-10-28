@@ -58,10 +58,35 @@ int main(void)
   // printf("%d\n",value);
   
   // 字符长度获取
-  char arr[10] = "hello";
+/*   char arr[10] = "hello";
   // size_t len;
   // gets(arr);
   // len = strlen(arr);
-  printf("Lenth: %ld\n",strlen(arr));
+  printf("Lenth: %ld\n",strlen(arr)); */
+
+  // int a[3] = {1,2,3};
+  // int *b,*c;
+  // b = a;
+  // c= &a[1];
+  // printf("%p %p\n",b,c); // 0x7ffc6992c7fc 0x7ffc6992c800
+  // // printf("%p\n",b+2);
+  // printf("%d\n", *b); // 1
+  // printf("%d\n", *b+56); //  值的运算
+  // printf("%p\n",b+2);// 指针地址运算
+  // printf("%d\n", *(b+2)); // 指针运算后取值
+  // printf("%p\n", b+4);
+
+// 指针遍历数组
+  int arr[5] = {1,4,5,7,8};
+  int *array,i;
+  array = arr;
+  printf("%ld \n",sizeof(arr)/sizeof(int));
+  // for(i=0;i<sizeof(arr)/sizeof(int);i++){
+  //   printf("%d\n",arr[i]);
+  // }
+  for(i=0;i<sizeof(arr)/sizeof(int);i++){
+    printf("%d",*array++);
+    puts("");
+  }
 }
 
