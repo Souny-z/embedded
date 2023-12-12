@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <string.h> // ×Ö·ûÏà¹Øº¯Êý
+#include <string.h> // å­—ç¬¦ç›¸å…³å‡½æ•°
 
-// Êý×é³¤¶È»ñÈ¡ string.h =>strlen() or sizeof(arr)/sizeof(char)
+// æ•°ç»„é•¿åº¦èŽ·å– string.h =>strlen() or sizeof(arr)/sizeof(char)
 void arrayLength()
 {
     char arr[10] = "hello";
@@ -13,11 +13,11 @@ void arrayLength()
     // length = sizeof(arr)/sizeof(char);
 }
 
-// ¶þÎ¬Êý×éÇó×î´óÖµ
+// äºŒç»´æ•°ç»„æ±‚æœ€å¤§å€¼
 void arrayMaxValue()
 {
     int arr[3][4] = {{11, 12, 13, 14}, {1, 2, 3, 4}, {5, 6, 7, 8}};
-    int i, j; // ·Ö±ð¿ØÖÆÐÐÁÐ
+    int i, j; // åˆ†åˆ«æŽ§åˆ¶è¡Œåˆ—
     int temp = arr[0][0];
     for (i = 0; i <= 3; i++)
     {
@@ -32,22 +32,22 @@ void arrayMaxValue()
     printf("i:%d,j:%d,max:%d", i, j, temp);
 }
 
-// Ñî»ÔÈý½Ç
+// æ¨è¾‰ä¸‰è§’
 void yangHui()
 {
     int a[10][10] = {{0}};
     int i, j;
-    // Êý×ÖÉú³É i ¿ØÖÆÐÐ j ¿ØÖÆÁÐ
+    // æ•°å­—ç”Ÿæˆ i æŽ§åˆ¶è¡Œ j æŽ§åˆ¶åˆ—
     for (i = 0; i < 10; i++)
     {
-        a[i][0] = 1; // ¿ØÖÆµÚÒ»ÁÐµÄµÚÒ»ÅÅÔªËØ
-        // ´ÓµÚ¶þÁÐ¿ªÊ¼¼ÆËãºóÃæÖµ
+        a[i][0] = 1; // æŽ§åˆ¶ç¬¬ä¸€åˆ—çš„ç¬¬ä¸€æŽ’å…ƒç´ 
+        // ä»Žç¬¬äºŒåˆ—å¼€å§‹è®¡ç®—åŽé¢å€¼
         for (j = 1; j <= i; j++)
         {
             a[i][j] = a[i - 1][j - 1] + a[i - 1][j]; //
         }
     }
-    // ´òÓ¡ÐÐÁÐ i ¿ØÖÆÐÐ j ¿ØÖÆÁÐ
+    // æ‰“å°è¡Œåˆ— i æŽ§åˆ¶è¡Œ j æŽ§åˆ¶åˆ—
     for (i = 0; i < 10; i++)
     {
         for (j = 0; j <= i; j++)
@@ -58,7 +58,7 @@ void yangHui()
     }
 }
 
-// Êý×éµ¹Ðò
+// æ•°ç»„å€’åº
 void arrayReverse()
 {
     int array[5] = {1, 2, 3, 4, 5};
@@ -69,7 +69,7 @@ void arrayReverse()
     }
 }
 
-// Ö¸Õëµ¹ÐòÊä³öÊý×é
+// æŒ‡é’ˆå€’åºè¾“å‡ºæ•°ç»„
 void pinterArray()
 {
     int arr[5] = {1, 4, 5, 7, 8};
@@ -82,20 +82,20 @@ void pinterArray()
     }
 }
 
-// ¶þÎ¬Êý×éÓëÖ¸Õë
+// äºŒç»´æ•°ç»„ä¸ŽæŒ‡é’ˆ
 void pinterDoubleArray()
 {
     int arr[3][4] = {{11, 1, 14, 12}, {15, 22, 33, 44}, {25, 36, 47, 58}};
     int *p = &arr[0][0];
-    // ÏÈÖ¸ÕëºóÊý×é£¬p[1] = array[0], p[2] = array[1], p(3) = array[2]
-    // int *p[3] = {array[0], array[1], array[2]}; // Ö¸ÕëÊý×é
+    // å…ˆæŒ‡é’ˆåŽæ•°ç»„ï¼Œp[1] = array[0], p[2] = array[1], p(3) = array[2]
+    // int *p[3] = {array[0], array[1], array[2]}; // æŒ‡é’ˆæ•°ç»„
     printf("%d__%d\n", arr, **arr);
     printf("%d__%d\n", arr, *(*arr + 1));
     printf("%d__%d\n", arr + 1, *(*(arr + 1)));
     printf("%d__%d\n", arr[0] + 1, *(*(arr + 1) + 1));
 }
 
-// É¾³ý×Ö·û´®µÄ¿Õ¸ñ
+// åˆ é™¤å­—ç¬¦ä¸²çš„ç©ºæ ¼
 void del_Spaces(char *s1)
 {
     char *s2;
@@ -113,7 +113,7 @@ void del_Spaces(char *s1)
             s1++;
         }
     }
-    *s2 = '\0'; // ½« \0 ¼ÓÈë×Ö·û´®½áÊø±êÖ¾
+    *s2 = '\0'; // å°† \0 åŠ å…¥å­—ç¬¦ä¸²ç»“æŸæ ‡å¿—
 }
 
 int fibo(int n)
@@ -154,7 +154,7 @@ int feibo(int n)
         }
     }
 }
-// Ö÷º¯Êý
+// ä¸»å‡½æ•°
 int main(void)
 {
     fibo(10);
